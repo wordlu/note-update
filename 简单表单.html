@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单操作</title>
+</head>
+<body>
+	<form method="post" action="https://pizza.example.com/order" enctype="application/x-www-form-urlencoded">
+		<p><label>姓名：<input name="custname" required></label></p>
+		<p><label>电话：<input type="tel" name="custtle" required></label></p>
+		<p><label>邮箱：<input type="email" name="custemail" required></label></p>
+		<fieldset>
+			<legend>披萨大小：</legend>
+			<label><input type="radio" name="size" value="small" required>大</label>
+			<label><input type="radio" name="size" value="mediue" required>中</label>
+			<label><input type="radio" name="size" value="large" required>小</label>
+		</fieldset>
+		<fieldset>
+			<legend>披萨配料：</legend>
+			<label><input type="checkbox" name="topping" value="bacon">熏肉</label>
+			<label><input type="checkbox" name="topping" value="cheese">奶酪</label>
+			<label><input type="checkbox" name="topping" value="onion">洋葱</label>
+			<label><input type="checkbox" name="topping" value="mushroom">蘑菇</label>
+		</fieldset>
+		<p><label>配送时间：<input type="time" min="11:00" max="21:00" step="900" name="delivery"></label></p>
+		<p><button>提交</button></p>
+	</form>
+
+	<form class="f-hidden">
+		<input type="file" name="image" id="file">
+	</form>
+	<br>
+	<label for="file" class="m-upload">选择图片</label>  <!-- 将input和label用for属性关联起来 -->
+
+	<input type="file" name="" accept="image/*,audio/*,vidio/*" multiple/>
+
+</body>
