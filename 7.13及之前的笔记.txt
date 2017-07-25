@@ -1,0 +1,69 @@
+【7.10】
+z-index:设置元素的堆叠顺序，拥有较高值得元素会处于堆叠顺序较低的元素的前面。可设置为负值。
+overflow：规定当内容溢出元素框时发生的事情。
+	值：visible内容不会被修剪
+	    hidden内容被修剪并隐藏
+	    scroll内容被修剪并有滚动条
+cursor：定义鼠标指针的光标形状
+	url：需使用自定义光标的URL
+	pointer：光标为一只手
+	move：指示某对象可被移动，形状为四个箭头
+
+
+
+outline：是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用
+	outline-color
+	outline-style
+	outline-width
+transition:过渡。可以通过它不需使用js就实现动画交互效果。是一个简写属性，用于设置4个过度属性
+
+
+dispaly：规定元素应该生成的框的类型
+	none此元素不会被显示
+	block此元素将显示为块级元素，元素前后会带有换行符
+	inline默认值，此元素将会显示为内联元素，元素前后无换行符。
+	list-item元素会作为列表显示
+
+<link href="1.ico" rel="shortcut icon">
+这个语句可以将网页的小图标加图片。可在网上找ico在线制作工具制作大小和格式。
+
+font-style：normal；
+
+加边框 border:1px solid #000;
+
+去掉hover样式 pointer-events: none;
+
+加hover样式 
+	li:hover {
+		color: #000;
+		cursor:pointer;
+	}
+	
+	
+	
+【7.12】	
+加边框 border:1px solid #000;
+
+去掉hover样式 pointer-events: none;
+
+加hover样式 
+	li:hover {
+		color: #000;
+		cursor:pointer;
+	}
+
+使文字在一行显示，显示不完使用……代替的方法：
+	overflow: hidden;（溢出内容隐藏）
+	white-space: nowrap;（规定段落中的文本不进行换行）
+	text-overflow: ellipsis;（当文本溢出时使用省略号代替被修剪的文本）
+
+
+【7.13】
+filter:定义了元素的可视效果，例如模糊和饱和度等
+	filter:blur(px)设置高斯模糊，值越大越模糊 | brightness(%)1为正常，小于100%变暗，大于100%更亮。 | contrast(%) 调整图像的对比度。 | opacity(%)转化图像的透明程度
+	此外，透明度可以直接使用opacity:0.4  或针对IE更早版本使用 filter:alpha(opacity=40);
+	
+overflow:溢出内容的显示方法
+	visible内容不会被修剪;
+	hidden内容被修剪并隐藏;
+	scroll内容被修剪并有滚动条;
