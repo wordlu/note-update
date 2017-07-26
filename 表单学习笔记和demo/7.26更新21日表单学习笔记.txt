@@ -1,0 +1,116 @@
+【7.21】表单操作
+ 步骤：构建表单--服务器处理--配置表单
+		<form method="post" action="https://pizza.example.com/order" enctype="application/x-www-form-urlencoded">
+			<p><label>姓名：<input name="custname"></label></p>
+			<fieldset>
+				<legend>披萨大小：</legend>
+				<label><input type="radio" name="size" value="small">大</label>
+			</fieldset>
+			<fieldset>
+			<legend>披萨配料：</legend>
+				<label><input type="checkbox" name="topping" value="bacon">熏肉</label>
+				<label><input type="checkbox" name="topping" value="cheese">奶酪</label>
+			</fieldset>
+			<p><label>配送时间：<input type="time" min="11:00" max="21:00" step="900" name="delivery"></label></p>
+			<p><button>提交</button></p>
+		</form>
+	name标识要提交数据的名称；
+	value标识区分不同按钮的标识用；
+表单验证：在需要验证的元素中加入 required 验证填写内容是否合法
+
+表单内容：元素 验证 提交
+	name属性：var pizzaForm = document.forms.pizza(name属性)
+	autocomplete:-on(输入框根据记录进行筛选提示) -off(无提示，有的话是浏览器原因)
+	
+	elements:
+	1 该表单子孙表单控件(除图片按钮) button,fieldset,input,object,keygen,output,select,textarea,排除type="image"  2归属于该表单的表单控件(除了图片按钮)
+	elemen是动态节点集合  ？前面讲过？
+	
+	length: -elements.length 标识节点集合里面包含的元素的个数
+
+	form[name]:返回id或者name为指定名称的表单控件(除图片)，如果结果为空，则返回id为指定名称的img元素。
+			如果有多个同名元素，返回这些元素的动态节点集合。一旦用指定名称取过该元素，则不管该元素的id或者name怎么变化，只要节点还在页面上均可使用原名获取该元素。
+			
+	form的一些接口：reset();submit();checkValidity();
+		reset()
+		-可重置元素:input keygen output select textarea
+		-触发表单reset事件，(例如删除已经选择的图片) 阻止该事件的默认行为可取消重置。
+		
+		-元素重置时不再触发元素上的chang和input事件。
+	
+label元素：
+		<label for="txtId" form="formId">
+		for对应htmlFor，将label关联到具体的表单控件上去。
+	htmlFor -关联表单控件激活行为
+			-可关联元素：button input(除hidden外)，keygen,meter,output,progress,select,textarea
+	control -如果指定了for属性，则为该for属性对应ID的可关联元素
+	-如果没有指定for属性，则为第一个子孙可关联元素
+	form 
+	-关联归属表单
+	-可关联元素：button,fieldset,input,keygen,label,object,output,select,textarea
+	-只读属性，不可再程序中修改。
+
+input元素：
+
+	type属性：
+	-控件外观
+	-数据类型
+	-默认为text
+
+	本地图片预览：
+				-onchange
+				-accepr
+				-multiple
+				-files
+
+select元素：
+	属性：
+	name表单提交以及取节点；
+	value第一个选中选项的value，若没有选中选项则为空
+	multiple控制选择器多选
+	options：选择器下所有节点的集合，动态的节点集合
+	selectedOptions:所有选中的节点集合
+	selectedIndex：第一个选中的元素的索引值，若没有选中的元素则返回-1
+	add(element[,before]):在指定位置之前添加参照物，如果没有指定则在最后添加
+	remove([index]):删除某个选项
+
+	<optgroup>用来把相关性比较大的选项做分组-disabled 表示当前分组不可选
+	-label属性：对分组归属的说明
+	<option>
+	-value提交表单
+	-text显示在页面的文字
+	-index当前的索引值
+	-selected表示当前是否被选中
+	-defaultSelected表示默认情况下选项是否被选中
+	
+	创建选项：
+	var option = document.creatElement('option');
+	option.value = "1.0";
+	option.textContent = "1.0概述"；
+	等同于 var option = new option('1.0概述','1.0')；
+	
+	添加选项：
+	select.add(option,opt1.1); //将1.0添加到1.1前面
+	
+	删除选项：
+	select.remove(2); //删除索引为2的节点
+	
+	级联下拉选择器: onchange remove add
+	详情见demo
+	
+	textarea：
+	啊好多属性，查官网吧不挨个记了。 
+	-selection:标识对用户选中的信息。没有内容选中时，selectionStart 和 selectionEnd都指向光标位置；有内容选中时，指示选中区域的开头结尾。
+	-selectionDirection 标识使用方向键选择内容时的行为。(shift+方向键）forward操作selectionEnd，backward操作start.
+	
+	@输入提示：-oninput  -selectionStart  -setRangeText  详情见demo
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

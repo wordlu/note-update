@@ -1,0 +1,125 @@
+DOM学习：
+
+	DOMCore 核心的结构和API定义
+	DOM HTML 将html元素转化成节点
+	DOM Style 将css元素转化成节点
+	DOM Event 时间模型，使页面响应用户操作。
+
+	元素遍历：p.firstElementChild  第一个元素子节点 p.lastElememntChild 最后一个元素子节点
+			  p.nextElementSibling 下一个元素节点  p.previousElementSibling 前一个元素节点
+			  
+	获取节点
+		父子关系
+		兄弟关系
+			缺点：通过关系获取节点可维护性差
+			
+		通过借口获取：getElementById  getElementByTagName getElementByClassName querySelector/All获取单个节点/所有节点
+		
+			document.getElementById  调用id要用document全局下  //只能在document上调用，返回值唯一
+			
+			element.getElementsByTagName  通过元素element调用
+			a.getElementsByClassNameByClassName("*") //指定a下所有的元素
+			//以上2个都是动态的，节点改变会传入
+			
+			a.querySelector("#b .c") //通过选择器获取id=b的节点下class=c的元素 // 不动态的，初始传入的值不会改变
+			a.querySelectorAll  //返回值唯一
+			
+			兼容性：
+				function getElementByClassName(element,names) {
+					if (element.getElementByClassName) {
+						return element.getElementByClassName(names);  //特性侦测，优先使用W3C规范
+					} else ｛
+						var elements = element.getElementByTagName('*');  //获取所有后代元素
+						var result = [];
+						var element,
+							classNameStr,
+							flag;
+						names = name.split('');
+						for (var i = 0; element = element[i]; i++) {    //选择包含类名的元素
+							classNameStr = '' + element.className + '';
+							flag = true;
+							for (var j = 0,name; name = names[j]; j++) {
+								if(classNameStr.indexOf('' + name + '') == -1) {
+									flag = false;
+									break;
+								}
+							}
+							if (flag) {
+								result.push(element);
+							}
+						}
+						return result;
+					｝
+				}
+		
+		
+	创建节点
+		element = document.creatElement(tagName)  //创建节点
+
+	修改节点
+		element.textContext;  //节点下所有的文本节点
+		a.textContext = "xiaoming";//修改  ie9以下不支持
+		
+		element.innerText;  //基本同上，但是不规范，ff不支持
+
+	插入节点
+		user.appendChild(h1); //在元素末尾插入h1节点
+		user.insertBefore(h1,h2)  //在h2前面添加h1节点
+		
+	删除节点
+		child = element.removeChild(child);
+
+	innerHTML
+		users.innerHTML;//将users置为空
+		li.innerHTML = '<img src="">\<a href="">李峰</a>'
+		缺点：内存泄漏、安全问题
+
+属性学习：
+	每个html属性对应相应的DOM属性	
+	如 id type className htmlFor
+property accessor
+	属性访问器：input.className;  //input的class
+				input["id"];  //input的id
+				input.value = "123"; //增加value值
+				input.disabled = true; //设置不能输入
+				通过属性访问器访问过的属性是转换过的实用对象。
+			缺点：通用性差、扩展性差；但能转换实用对象。
+getAttribute/setAttribute
+				input.getAttribute("class");  //读属性
+				input.setAttribute("value","123");  //写属性
+				操作的是属性的字符串，不会转换。
+			缺点：获取的都是字符串
+dataset：       
+				div.dataset.  操作的是属性的字符串，不会转换。
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
