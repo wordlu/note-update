@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		
+		  /*后代选择器*/
+		.s_city:hover .s_city_bg{
+
+			display:block;
+		}
+		.s_city_bg{
+			width:254px; overflow:hidden; position:absolute; left:50px; top:29px; z-index:900; display:none;
+		}
+		.s_city_c{
+			width:252px; height:460px; overflow:hidden; background-color:#FFF; font-family:"Microsoft YaHei"; margin-top:6px; border:1px solid #cdcdcd;
+		}
+		.s_city_c h2{
+			width:230px; height:29px; line-height:29px; overflow:hidden; font-size:14px; font-weight:normal; text-align:left; margin-top:5px; border-bottom:1px dotted #666666;
+		}
+		table.c_tab tr th{
+			line-height:26px; font-weight:normal; color:#000; width:20px; text-transform:uppercase;
+		}
+		.c_h span {
+		    line-height: 26px;
+		    float: left;
+		    display: inline;
+		    padding: 0 3px;
+		    margin-right: 3px;
+		    cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	
+			<span class="s_city">
+				<span>北京</span>
+                <div class="s_city_bg">
+                    
+                    <div class="s_city_c">
+                        <h2>请选择收货地区</h2>
+                        <table border="0" class="c_tab" style="width:235px; margin-top:10px;" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <th>A</th>
+                            <td class="c_h"><span>安徽</span><span>澳门</span></td>
+                          </tr>
+                          <tr>
+                            <th>B</th>
+                            <td class="c_h"><span class="c_check">北京</span></td>
+                          </tr>
+                          <tr>
+                            <th>C</th>
+                            <td class="c_h"><span>重庆</span></td>
+                          </tr>
+                          <tr>
+                            <th>F</th>
+                            <td class="c_h"><span>福建</span></td>
+                          </tr>
+                          <tr>
+                            <th>G</th>
+                            <td class="c_h"><span>广东</span><span>广西</span><span>贵州</span><span>甘肃</span></td>
+                          </tr>
+                          <tr>
+                            <th>H</th>
+                            <td class="c_h"><span>河北</span><span>河南</span><span>黑龙江</span><span>海南</span><span>湖北</span><span>湖南</span></td>
+                          </tr>
+                          <tr>
+                            <th>J</th>
+                            <td class="c_h"><span>江苏</span><span>吉林</span><span>江西</span></td>
+                          </tr>
+                          <tr>
+                            <th>L</th>
+                            <td class="c_h"><span>辽宁</span></td>
+                          </tr>
+                          <tr>
+                            <th>N</th>
+                            <td class="c_h"><span>内蒙古</span><span>宁夏</span></td>
+                          </tr>
+                          <tr>
+                            <th>Q</th>
+                            <td class="c_h"><span>青海</span></td>
+                          </tr>
+                          <tr>
+                            <th>S</th>
+                            <td class="c_h"><span>上海</span><span>山东</span><span>山西</span><span>四川</span><span>陕西</span></td>
+                          </tr>
+                          <tr>
+                            <th>T</th>
+                            <td class="c_h"><span>台湾</span><span>天津</span></td>
+                          </tr>
+                          <tr>
+                            <th>X</th>
+                            <td class="c_h"><span>西藏</span><span>香港</span><span>新疆</span></td>
+                          </tr>
+                          <tr>
+                            <th>Y</th>
+                            <td class="c_h"><span>云南</span></td>
+                          </tr>
+                          <tr>
+                            <th>Z</th>
+                            <td class="c_h"><span>浙江</span></td>
+                          </tr>
+                        </table>
+                    </div>
+                </div>
+            </span>
+</body>
+</html>
