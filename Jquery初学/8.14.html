@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8.14</title>
+</head>
+<body>
+	<P>JQuery引用时一定要放在被被引用函数的前面</P>
+		<!-- rowspan，作用是指定单元格纵向跨越的行数。
+			colspan的作用是指定单元格横向跨越的列数。
+			只要加在你需要合并的<td>里
+			//colspan用法 -->
+			<table border="1">
+			  <tr>
+			     <td colspan=“3”> </td>    //表示所在单元格横跨三列
+			  </tr>
+			  <!-- html有一个标签caption 专门定义表格标题，并且在表格上方居中 -->
+			  <caption>购物车</caption>
+			</table>
+
+
+		<!-- 隐藏横向导航条，保留竖向导航条
+		html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+        } -->
+
+    <select onchange="window.location.href=this.value">
+		<option value="http://www.baidu.com">111</option>  <!-- 在选项中加链接 -->
+		<option selected="selected">222</option>  <!-- 设置默认选项 -->
+    </select>
+
+<!--     设置行间距要用line-height；
+ --></body>
+</html>

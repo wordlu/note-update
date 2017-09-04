@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQ初体验</title>
+	<style type="text/css">
+		div{
+			width: 100%;
+			height: 200px;
+			background-color: red;
+			margin:10px;
+			display: none;
+
+		}
+	</style>
+	<script src="js/jquery-1.11.1.min.js"></script>
+		<!-- 1、引入JQ文件 -->
+	<script type="text/javascript">
+
+//JQ与JS的区分
+		// 2、入口函数
+		$(document).ready(function() {
+			//注册事件，把on去掉
+			$("#btn1").click(function() {
+				//隐式迭代：自动遍历，不需我们写for循环；没有兼容性问题；注册事件不会被覆盖。
+				$("div").show(3000);
+			}); 
+
+			$("#btn2").click(function(){
+				$("div").html("我是内容哈哈哈！")
+			});
+
+			$("#btn3").click(function() {
+				$("div").hide(3000);
+			})
+		});  //$表示一个函数,这个相当于js中的window.onLoad = function () {}
+
+		window.onload = function() {
+			console.log("我是js的入口函数！");  //window.onload会等图片加载，所以入口函数会比JQUERY执行晚一些。
+		}
+
+		$(function(){
+			console.log("这是JQuery入口函数第二种写法！")
+		})
+		//JQ和JS的入口文件都要等文档加载，但JQ入口函数不需要等图片加载完成再加载。
+
+
+
+//DOM对象和JQ对象
+		//1、什么的dom对象：使用js的方式获取到的元素就是js对象
+			$(function() {
+				var cloth = document.getElementById("cloth");
+				cloth.style.backgroundColor = "pink";
+				//DOM对象转换成JQ对象
+				$(cloth).text("呵呵");
+				
+				var b = $("li");
+				//JQ对象转换成DOM对象
+				b[2].style.backgroundColor = "red";
+
+
+		//2、什么是jq对象：使用jq方式获取到的就是jq对象
+			var $li = $("#a");
+			console.log($li);
+			$li.text("我修改了内容！");
+		//3、jq对象与js对象的区别：js与jq对象的方法不能相互调用。jq对象里面放了dom对象。
+				//联系：jq对象就是js对象一个集合，是一个伪数组，里面存放的是js对象。两者可以相互转换。
+				//转换：DOM——>JQ：$()  
+				//		JQ——>DOM:1、$li[0]   2、$li.get(0)
+				//DOM对象需要一个个操作，需要遍历，有兼容性问题，事件会覆盖
+
+			})
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="展示" id="btn1">
+	<input type="button" value="设置内容" name="" id="btn2">
+	<input type="button" value="隐藏" name="" id="btn3">
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+	<ul >
+		<li id="cloth">1111</li>
+		<li id="a">2222</li>
+		<li>2222</li>
+	</ul>
+	<!-- <script type="text/javascript">
+		window.onload = function() {  //等待页面加载完成后才会执行；
+										//js注册事件，会被覆盖。addEvevtListener又会有兼容性。
+
+			var btn1 = document.getElementById('btn1');
+			var btn2 = document.getElementById('btn2');
+			var btn3 = document.getElementById('btn3');
+			var divs = document.getElementsByTagName('div');	
+
+			btn1.onclick = function () {
+				for(var i = 0;i < divs.length; i++) {
+					divs[i].style.display = 'block';
+				}
+			};
+
+			btn2.onclick = function () {
+				for(var i = 0; i < divs.length; i++) {
+					divs[i].innerText = '我是内容啊哈哈哈'; 
+					//低版本火狐浏览器不支持innerText。
+				}
+			};
+
+			btn3.onclick = function () {
+				for(var i = 0; i< divs.length; i++) {
+					divs[i].style.display = 'none';
+				}
+			}
+		}
+	</script> -->
+</body>
+</html>
+

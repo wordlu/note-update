@@ -1,0 +1,94 @@
+position属性：
+	absolute：绝对定位，相对于正常文档流的第一个父元素进行定位。使用top，right，bottom，left等值进行定位。
+	relative：相对定位。相对于元素的正常位置进行定位。
+	fixed：固定定位，相对于浏览器窗口进行定位。
+	
+让元素在一行显示的css：display:inline;
+
+function confirmAct() {
+    if (confirm('确定要执行此操作吗?')) {
+        return true;
+    }
+    return false;
+}  //弹窗时有选择的按钮，点击确定按钮执行操作，点击取消不知想操作。
+
+
+//添加表单验证的过程，有字数限制校验，有中文数字校验，有提交拦截校验;
+ <form id="form" method="post">
+            <label>添加图书馆</label>
+            <div>
+                <input placeholder="请输入" name="libaray" id="addLibrary" required >
+                <span id="libaray.info" style="color:red"></span>
+            </div>
+       
+            <label>添加管理员</label>
+            <div>
+                <input placeholder="请输入" name="admin" id="addAdmin" required>
+                <span id="admin.info" style="color:red"></span>
+            </div>
+        
+        <div>
+            <button type="submit">确认</button>
+        </div>
+</form>
+<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        var flag = {
+            "libaray":false,
+            "admin":false,
+        };
+
+        $(function(){
+            $("#addLibrary").blur(function(){
+                // 添加图书馆校验
+                var libaray = $(this).val().length;
+                if(libaray > 8){
+                    $("#libaray\\.info").html("字数超过限制");
+                    return;
+                }else{
+                    window.location.href="http://www.baidu.com"; //跳转到新页面
+                    flag.libaray = true;
+                }
+            });
+
+            $("#addAdmin").blur(function(){
+                // 添加管理员校验
+                var admin = $(this).val();
+				var pattern =  /^[\u4E00-\u9FA5A-Za-z0-9]+$/;
+				//正则表达式校验
+                if(!pattern.test(admin){
+                    $("#admin\\.info").html("字数超过限制");
+                    return;
+                }else{
+                    $("#admin\\.info").html("");
+                    flag.admin = true;
+                }
+            });
+			
+			//提交拦截校验
+            $("form").submit(function () {
+                var ok = flag.libaray&&flag.admin;
+                if (ok == false) {
+                    alert("输入有误！");
+                    return false;
+                }
+                return true;
+            });
+        })
+    </script>
+	
+	
+	
+	
+	8.18
+	
+<a> 标签的 target 属性规定在何处打开链接文档。
+_blank
+浏览器总在一个新打开、未命名的窗口中载入目标文档。
+_self
+这个目标的值对所有没有指定目标的 <a> 标签是默认目标，它使得目标文档载入并显示在相同的框架或者窗口中作为源文档。这个目标是多余且不必要的，除非和文档标题 <base> 标签中的 target 属性一起使用。
+_parent
+这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。
+_top
+这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。
+	

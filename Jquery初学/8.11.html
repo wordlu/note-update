@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8.11JQ学习</title>
+</head>
+<body>
+	<ul>
+		<li id="one">我是第1个li</li>
+		<li id="two">我是第2个li</li>
+		<li id="three">我是第3个li</li>
+		<li id="four">我是第4个li</li>
+		<li class="five">我是第5个li</li>
+	</ul>
+
+	<div class="three">111</div>
+	<div class="three">222</div>
+
+<div class="father"> 
+	<div>11</div>
+	<div>22
+		<p>111</p>
+		<p>222</p>
+		<p>333</p>
+	</div>
+	<div>33</div>
+	<p>444</p>
+	<p>555</p>
+</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+
+	//$实际上是一个函数，所以$();
+	//参数不同，功能就不同
+	//三种用法：
+	$(function(){
+		//1、参数是一个function，入口函数
+	});
+	$(document).ready(function(){
+		//2、把DOM对象转换成JQ对象，使其可以使用JQ方法
+	});
+	// $("div") $("#btn") $(".class") 3、参数是一个字符串，用来找对象
+
+
+		$(function() {
+			var lis = $("li"); //JQ对象  或者实用下一行JQ对象
+			// var lis = document.getElementsByTagName("li"); //JS对象
+			for (var i = 0; i < lis.length; i++) {
+				if (i%2 == 0) {
+					lis[i].style.backgroundColor = "pink";
+				} else{
+					lis[i].style.backgroundColor = "red";
+				}
+			}
+
+		});
+
+		//JQ设置样式的方法：css(name"样式名",value"样式值");
+		$(function(){
+			$("#one").css("backgroundColor","yellow");//id选择器
+
+			$("li").css("color","blue");//标签选择器
+
+			$("#four,.five").css("color","black");//并集选择器
+
+			$("div.three").css("color","pink");//交集选择器
+
+			
+
+			// $("s1,s2"); 并集选择器 ;s1的对象和s2的对象
+			// $("s1 s2"); 后代选择器 
+			// $("s1>s2"); 子代选择器
+			// $("s1s2"); 交集选择器;既有s1又有s2的对象
+
+		});
+
+		$(function(){
+			$(".father>p").css("backgroundColor","blue"); //选中444/555
+		});
+
+
+	</script>
+</body>
+</html>
+
