@@ -1,1 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2021-03-03T03:36:16.816Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="GrOuyXdkny0b1yMeesIr" version="14.4.3" type="github"><diagram id="zbNNPS7_GhzL8kuUdUZy" name="Page-1">7Zpbb5swGIZ/TaTtohPgkMNlQrqDlkpVs8O1Cw54dWxmnObw6/cZDISQpK1Eyi6Qogi/2PjwPrY/k/SQt9p+kTiO7kRAWM+xgm0PzXqO41o2fGthlwlDa5AJoaRBJtmlsKB7YkTLqGsakKSSUQnBFI2roi84J76qaFhKsalmWwpWrTXGIakJCx+zuvqbBirK1JEzLPWvhIZRXrM9GGd3VjjPbHqSRDgQmwMJ3faQJ4VQ2dVq6xGmxy4fl6zc5zN3i4ZJwtVrCsy//9nweTKY+dtFMPr2a7+fuTe26cczZmvT4/sIy0ciE9NqtcuHItnQFcMcUtOl4Gph7liQ9iPKgjneibVuSqKw/5SnppGQdA/5MYNbNghwWyrjtDPQT6OMeYIJCQIXaQVloYV+mKlGkgSK3eddto+kO7ytZJzjROUNFIzhOKGPaZN1wRWWIeVToZRYmUxmKIhUZHt2kO3COkCeiBVRcgdZ8gJD47bBHQ1MelPCUxARHYDTt828wAbYsHh2Ud0DAI55CF0o67Or9dlOvb7xieqco9owU0RyrMhUrHmQHIIEFwc9LaUUr7egNqqh1nNgzC1J/q5Joj58rBEHPqgUGCmeyBEhJ6DBjIYckowsdTFtJIWZPDGyErF+WIx9ysN5mmfWL5UHMzpaElB2ydLZGtEgIFwzJRRW+LFgPhaUq3T43Cl8YJA965Pbc6HhHqTtMg0fnV0qT3DoC6YpSwTo3BBN6OvAuzB/6zjuqja/RN8xDofwVTh4s+njk6Z7Tm9ihUR5jEL/Ouebd951WnY+70htuoeEEwkrzcT3SZL8AH+5BgDagexsFT641AUS/ExOZeuQaRaZ4ahtZM7tELBSHNHSed+s97bVb9v8CzsFdJgudwtfxOT8UtEh0TAS6JWh69WQyBtwOnjIdpEHsoRgP3phG+mIeRdi3LbDTeS8TMxkrdLTJVZUcE8EF5aUjpXrsTJqO0BFpwPU/GhyEpOOgobPp1bbMSdyz1OgDx7davFfcILaDk9R/UVpwYkkz+Brt2C8ywut1oPSwYVzChgWQIhRnFQ6+xu2f9R6hNm/GDX8TIjsjG/eeGS3Hi6ii8Yfn0M7ABoGALUeKdZfUN0Y+yXmKl3zdQzQuX8F9wdtx3/9+mnxpjwrpi+nu13/Wu6Prxf0QbL8C0b2U3f5PxZ0+w8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-03T03:36:38.177Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="-_50XEoopftTxIbtVct4" version="14.4.3" type="github">
+  <diagram id="zbNNPS7_GhzL8kuUdUZy" name="Page-1">
+    <mxGraphModel dx="501" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-17" value="Pharbers" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="170" y="360" width="220" height="416" as="geometry">
+            <mxRectangle x="110" y="120" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-18" value="+ request()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-19" value="+ getClient()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-21" value="+ generateAccessToken()&#xa;&#xa;+ saveToken()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-28" value="+ getAccessToken()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="104" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-29" value="+ verifyScope()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="130" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-30" value="+ generateRefreshToken()&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="156" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-32" value="+ generateAuthorizationCode()&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="182" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-31" value="+ getAuthorizationCode()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="208" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-35" value="+ saveAuthorizationCode()&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="234" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-37" value="+ revokeAuthorizationCode()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="260" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-36" value="+ validateScope()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="286" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-34" value="+ getUser()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="312" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-33" value="+ getRefreshToken()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="338" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-39" value="- grantScopeAuth()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="364" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LKjwnLs6DcxSd8IVzzD5-41" value="- getAccessScope()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LKjwnLs6DcxSd8IVzzD5-17" vertex="1">
+          <mxGeometry y="390" width="220" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
