@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-08T03:25:28.419Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="6eIFofMtdJv3E4fYtocQ" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T04:03:16.060Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="6zE44P7zmNBr9hunPH5t" version="14.4.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="1682" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -78,7 +78,7 @@
             <mxPoint x="130" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-7" value="4.请求认证服务器，参数有：response_type, client_id,redirect_uri, scope" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.5;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-7" value="4.请求认证服务器，参数有：response_type=code, client_id,redirect_uri, scope" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.5;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1">
           <mxGeometry x="-0.0204" width="80" relative="1" as="geometry">
             <mxPoint x="50" y="170" as="sourcePoint" />
             <mxPoint x="540" y="170.01999999999998" as="targetPoint" />
@@ -124,7 +124,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-19" value="12.发放令牌&lt;br&gt;向第10步接收的回调网址发送json数据&lt;br&gt;其中的access_token字段即为令牌" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" source="6Eb1THysY2c8-Wb8qI4P-118" target="6Eb1THysY2c8-Wb8qI4P-113">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-19" value="12.发放令牌、刷新令牌&lt;br&gt;向第10步接收的回调网址发送json数据&lt;br&gt;其中的access_token字段即为令牌" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" source="6Eb1THysY2c8-Wb8qI4P-118" target="6Eb1THysY2c8-Wb8qI4P-113">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="740" y="300" as="sourcePoint" />
             <mxPoint x="660" y="300" as="targetPoint" />
