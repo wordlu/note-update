@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-09T02:45:36.380Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="VNvXh4g41GATPI7urlMt" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-09T02:46:58.842Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="D0ANls6_-Abu9Vuv71VZ" version="14.4.4" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="1682" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -13,10 +13,13 @@
         <mxCell id="6Eb1THysY2c8-Wb8qI4P-113" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="6Eb1THysY2c8-Wb8qI4P-93" vertex="1">
           <mxGeometry x="45" y="310" width="10" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-16" value="10.申请令牌&lt;br&gt;参数有：client_id, client_srcret&lt;br&gt;grant_type=authorization_code,&lt;br&gt;code, redirect_uri" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6Eb1THysY2c8-Wb8qI4P-93" target="6Eb1THysY2c8-Wb8qI4P-96">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-16" value="10.申请令牌&lt;br&gt;参数有：client_id, client_srcret&lt;br&gt;grant_type=authorization_code,&lt;br&gt;code, redirect_uri" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.08;entryY=0.56;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6Eb1THysY2c8-Wb8qI4P-93">
           <mxGeometry x="0.0021" y="-70" width="80" relative="1" as="geometry">
-            <mxPoint x="50" y="340" as="sourcePoint" />
-            <mxPoint x="130" y="340" as="targetPoint" />
+            <mxPoint x="50" y="341" as="sourcePoint" />
+            <mxPoint x="285.8000000000002" y="340.5999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="341" />
+            </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -35,9 +38,9 @@
             <mxPoint x="250" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-12" value="7.用户给予授权" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6Eb1THysY2c8-Wb8qI4P-94" target="6Eb1THysY2c8-Wb8qI4P-96">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-12" value="7.用户给予授权" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.02;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="6Eb1THysY2c8-Wb8qI4P-94" target="6Eb1THysY2c8-Wb8qI4P-118">
           <mxGeometry x="0.6768" width="80" relative="1" as="geometry">
-            <mxPoint x="5" y="260" as="sourcePoint" />
+            <mxPoint x="15" y="260" as="sourcePoint" />
             <mxPoint x="85" y="260" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
@@ -78,20 +81,20 @@
             <mxPoint x="130" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-7" value="4.请求认证服务器，参数有：response_type=code, client_id,redirect_uri, scope" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.5;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-7" value="4.请求认证服务器，参数有：response_type=code, client_id,redirect_uri, scope" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.08;entryY=0.176;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1" target="6Eb1THysY2c8-Wb8qI4P-118">
           <mxGeometry x="-0.0204" width="80" relative="1" as="geometry">
             <mxPoint x="50" y="170" as="sourcePoint" />
-            <mxPoint x="540" y="170.01999999999998" as="targetPoint" />
+            <mxPoint x="530" y="170" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_RnlnGZY591C7_LiBBRK-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="_RnlnGZY591C7_LiBBRK-1">
           <mxGeometry x="45" y="70" width="10" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="_RnlnGZY591C7_LiBBRK-15" value="9.重定向&lt;br&gt;地址为第4步的redirect_uri,&lt;br&gt;参数为 code，即授权码" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1" target="6Eb1THysY2c8-Wb8qI4P-93">
+        <mxCell id="_RnlnGZY591C7_LiBBRK-15" value="9.重定向&lt;br&gt;地址为第4步的redirect_uri,&lt;br&gt;参数为 code，即授权码" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="_RnlnGZY591C7_LiBBRK-1">
           <mxGeometry x="-0.0381" y="-50" width="80" relative="1" as="geometry">
             <mxPoint x="50" y="340" as="sourcePoint" />
-            <mxPoint x="130" y="340" as="targetPoint" />
+            <mxPoint x="300" y="340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
