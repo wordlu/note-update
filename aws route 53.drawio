@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T10:03:35.925Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="ShajfG6P7Pepaebts_ub" version="14.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T10:04:00.685Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="RRNeiDH76uV46v4JiEZc" version="14.4.5" type="github">
   <diagram id="ui8C8l0TlQu1qD5hYaOn" name="Page-1">
     <mxGraphModel dx="1282" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,14 +37,6 @@
         </mxCell>
         <mxCell id="GiB74SUSvHuo_sFO9JpR-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-2">
           <mxGeometry x="45" y="50" width="10" height="380" as="geometry" />
-        </mxCell>
-        <mxCell id="GiB74SUSvHuo_sFO9JpR-15" value="2.浏览器将请求路由到DNS服务" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-2" source="GiB74SUSvHuo_sFO9JpR-23" target="GiB74SUSvHuo_sFO9JpR-2">
-          <mxGeometry x="-0.0829" width="80" relative="1" as="geometry">
-            <mxPoint x="-150" y="245" as="sourcePoint" />
-            <mxPoint x="-70" y="100" as="targetPoint" />
-            <Array as="points" />
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="GiB74SUSvHuo_sFO9JpR-4" value="DNS root name server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="570" y="70" width="100" height="490" as="geometry" />
