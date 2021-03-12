@@ -1,1 +1,137 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T09:31:45.335Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" version="14.4.5" etag="gFLLlPyUwAROfWdYBOps" type="github"><diagram id="ui8C8l0TlQu1qD5hYaOn">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-12T10:03:35.925Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="ShajfG6P7Pepaebts_ub" version="14.4.5" type="github">
+  <diagram id="ui8C8l0TlQu1qD5hYaOn" name="Page-1">
+    <mxGraphModel dx="1282" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-1" value="user" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="20" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-3" value="1.用户输入网址" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-1" target="GiB74SUSvHuo_sFO9JpR-14">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="10" y="100" as="sourcePoint" />
+            <mxPoint x="100" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-2" value="DNS resolver" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="70" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-5" value="3.DNS解析程序将请求转发到&lt;br&gt;DNS根名称服务器" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-2" target="GiB74SUSvHuo_sFO9JpR-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="100" as="sourcePoint" />
+            <mxPoint x="130" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-10" value="4.DNS解析程序转发请求到&lt;br&gt;.com域的其中一个TLD名称服务器" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-2" target="GiB74SUSvHuo_sFO9JpR-9">
+          <mxGeometry x="-0.0272" width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="230" as="sourcePoint" />
+            <mxPoint x="130" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-13" value="5.DNS解析程序选择一个Route 53名称服务器，并将请求转发过去" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-2" target="GiB74SUSvHuo_sFO9JpR-12">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="340" as="sourcePoint" />
+            <mxPoint x="130" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-2">
+          <mxGeometry x="45" y="50" width="10" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-15" value="2.浏览器将请求路由到DNS服务" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-2" source="GiB74SUSvHuo_sFO9JpR-23" target="GiB74SUSvHuo_sFO9JpR-2">
+          <mxGeometry x="-0.0829" width="80" relative="1" as="geometry">
+            <mxPoint x="-150" y="245" as="sourcePoint" />
+            <mxPoint x="-70" y="100" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-4" value="DNS root name server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="70" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-4">
+          <mxGeometry x="45" y="90" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-8" value="go to name server for .com TLD" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="GiB74SUSvHuo_sFO9JpR-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="230" as="sourcePoint" />
+            <mxPoint x="540" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-9" value="name server for .com TLD" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="70" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-9">
+          <mxGeometry x="45" y="220" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-11" value="go to Route 53 name server" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="GiB74SUSvHuo_sFO9JpR-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="350" as="sourcePoint" />
+            <mxPoint x="670" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-12" value="Amazon Route 53 name server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="70" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-12">
+          <mxGeometry x="45" y="330" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-14" value="浏览器" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="100" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-20" value="8.浏览器将请求发送到IP地址，也就是内容的所在位置，比如S3存储桶或Web服务器" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="GiB74SUSvHuo_sFO9JpR-14" target="GiB74SUSvHuo_sFO9JpR-19">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="470" as="sourcePoint" />
+            <mxPoint x="130" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-29" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-14">
+          <mxGeometry x="45" y="460" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-30" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-14">
+          <mxGeometry x="45" y="80" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-16" value="6.Route 53名称服务器在托管区域中查找记录，获取关联值，并将IP地址返回" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="GiB74SUSvHuo_sFO9JpR-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="480" as="sourcePoint" />
+            <mxPoint x="820" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-18" value="7.DNS解析程序获得用户所需&lt;br&gt;IP地址并返回给浏览器" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.502;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="GiB74SUSvHuo_sFO9JpR-2" target="GiB74SUSvHuo_sFO9JpR-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="470" as="sourcePoint" />
+            <mxPoint x="470" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-19" value=":Object" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="70" width="100" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="GiB74SUSvHuo_sFO9JpR-19">
+          <mxGeometry x="45" y="440" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-21" value="9.IP地址上的资源将请求的网页返回到浏览器，浏览器显示该页面" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="GiB74SUSvHuo_sFO9JpR-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="580" as="sourcePoint" />
+            <mxPoint x="1000" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-22" value="10.展示给用户" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="GiB74SUSvHuo_sFO9JpR-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="580" as="sourcePoint" />
+            <mxPoint x="120" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GiB74SUSvHuo_sFO9JpR-24" value="2.浏览器将请求路由到DNS服务" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" source="GiB74SUSvHuo_sFO9JpR-14" target="GiB74SUSvHuo_sFO9JpR-23">
+          <mxGeometry x="-0.0829" width="80" relative="1" as="geometry">
+            <mxPoint x="199.5" y="160" as="sourcePoint" />
+            <mxPoint x="399.5" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="160" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
